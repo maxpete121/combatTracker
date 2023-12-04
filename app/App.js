@@ -1,8 +1,12 @@
 import { router } from './router-config.js';
+import { personsController } from './controllers/personsController.js';
 
 class App {
 
   router = router
+
+  personsController = new personsController()
+
 
 }
 

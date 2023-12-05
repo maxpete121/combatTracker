@@ -20,9 +20,9 @@ export class personsController{
     }
     drawPlayers(){
         let players = AppState.people
-        let content = ''
+        let content = ' '
         players.forEach(player => content += player.personTemplate())
-        document.getElementById("scoring-space").innerHTML = content
+        document.getElementById('score-space').innerHTML = content
         this.drawScores()
 
     }

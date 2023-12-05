@@ -18,7 +18,8 @@ export class person{
         <button onclick="app.personsController.addToValue('${this.theirName}')"><i class="mdi mdi-plus-thick"></i></button>
         <h4 id="change-value" class="m-2">0</h4>
         <i class="mdi mdi-minus-thick"></i>
-      </div>`
+      </div>
+      `
     }
 
 }

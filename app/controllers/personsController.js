@@ -8,11 +8,14 @@ export class personsController{
     constructor(){
         console.log('yay')
     }
-    addToValue(name){
-
+    addToValue(theirName){
+        personsService.addToValue(theirName)
+        let pplname = theirName
+        this.drawScores()
     }
     drawScores(){
         let personOne = AppState.people
-        document.getElementById("change-value-tom").innerText = 
+        let thePerson = personOne.find(scoreV => scoreV.theirName)
+        document.getElementById("change-value").innerText = thePerson.theirScore
     }
 }

@@ -13,8 +13,9 @@ class ObservableAppState extends EventEmitter {
 
   // NOTE ours
   people = [
-    new person('paul', 20),
-    new person('tom'),
+    new person('Paul', 20),
+    new person('Tom', 25),
+    new person('Phil', 22)
   ]
 
 

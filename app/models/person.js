@@ -6,10 +6,9 @@ export class person{
     theirScore 
 
 
-    constructor(name){
-        console.log('yes')
+    constructor(name, score){
         this.theirName = name
-        this.theirScore = 0
+        this.theirScore = score
 
     }
 }

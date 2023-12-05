@@ -18,4 +18,12 @@ export class personsController{
         let thePerson = personOne.find(scoreV => scoreV.theirName)
         document.getElementById("change-value").innerText = thePerson.theirScore
     }
+    drawPlayers(){
+        let players = AppState.people
+        let content = ''
+        players.forEach(player => content += player.personTemplate())
+        document.getElementById("scoring-space").innerHTML = content
+        this.drawScores()
+
+    }
 }
